@@ -4,6 +4,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [here](https://your-solution-url.com)
-- Live Site URL: [here](https://your-live-site-url.com)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/flexbox-card-component-BO0iULERLn)
+- Live Site URL: [here](https://capable-choux-283962.netlify.app)
 
