@@ -1,0 +1,100 @@
+:root {
+
+    --clr-primary-400: hsl(185, 75%, 39%);
+    --clr-primary-700: hsl(227, 10%, 46%);
+    --clr-primary-900: hsl(229, 23%, 23%);
+
+    --clr-neutral-100: white;
+    --clr-neutral-200: hsla(0, 0%, 59%, 0.25);
+    --clr-neutral-400: hsl(0, 0%, 59%);
+
+    --ff-primary: 'Kumbh Sans', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-400: 0.7rem;
+    --fs-700: 1.125rem;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 40vh right 50vw, top 40vh left 50vw;
+    background-size: 130vh;
+}
+
+.card {
+    text-align: center;
+    color: var(--clr-primary-700);
+    background-color: var(--clr-neutral-100);
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 1rem 2rem 3rem -1rem hsla(0,0%,0%,0.25);
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: center;
+}
+
+.profile-content  p:first-child, h2 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-900);
+}
+
+.profile-image {
+    height: 2rem;
+}
+
+.profile-image img {
+    margin: 0 auto;
+    border: 5px solid var(--clr-neutral-100);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 0.5em;
+    padding-block: 1.5rem;
+    margin-top: 1rem;
+}
+
+.profile-info p:last-of-type {
+    flex-basis: 100%;
+}
+
+.profile-stats {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    border-top: 2px solid var(--clr-neutral-200);
+    padding-block: 1.5rem;
+}
+
+
+.profile-stats div {
+    display: flex;
+    flex-direction: column;   
+}
+
+.profile-stats p:last-of-type {
+    font-size: var(--fs-400);
+    letter-spacing: 0.1em;
+}
+
